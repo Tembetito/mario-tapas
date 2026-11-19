@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mario Tapas</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #101114;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #080808;
+  padding: 28px 15px;
+  text-align: center;
+  border-bottom: 3px solid #e21b23;
+}
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-style: italic;
+}
+h1 span { color: #f0242d; }
+header p {
+  color: #bcbcbc;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+h2 { font-size: 21px; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.card {
+  background: #202126;
+  border: 1px solid #414149;
+  border-radius: 12px;
+  padding: 20px 12px;
+  text-align: center;
+}
+.number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff343c;
+}
+.card p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+button {
+  background: #d71920;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 17px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+}
+.notice {
+  color: #aaa;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 25px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>MARIO <span>TAPAS</span></h1>
+  <p>REPARACIÓN DE TAPAS DE CILINDROS</p>
+</header>
+<main>
+  <h2>Panel del taller</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="number">0</div>
+      <p>🔍 Tapas para revisar</p>
+    </div>
+    <div class="card">
+      <div class="number">0</div>
+      <p>⏳ Presupuestos pendientes</p>
+    </div>
+    <div class="card">
+      <div class="number">0</div>
+      <p>🔧 Trabajos autorizados</p>
+    </div>
+    <div class="card">
+      <div class="number">0</div>
+      <p>✅ Listas para entregar</p>
+    </div>
+  </div>
+  <button type="button" onclick="alert('Próximamente: ingreso de tapas')">
+    + INGRESAR NUEVA TAPA
+  </button>
+  <p class="notice">
+    Mario Tapas | Primera versión de prueba
+  </p>
+</main>
+</body>
+</html>
