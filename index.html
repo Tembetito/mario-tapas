@@ -55,6 +55,33 @@
   font-size: 30px;
   filter: drop-shadow(0 3px 5px rgba(0,0,0,0.5));
 }
+  /* ICONOS GRANDES DEL PANEL */
+
+.grid .card:nth-child(1)::after {
+  content: "🔍";
+}
+
+.grid .card:nth-child(2)::after {
+  content: "📋";
+}
+
+.grid .card:nth-child(3)::after {
+  content: "🔧";
+}
+
+.grid .card:nth-child(4)::after {
+  content: "✅";
+}
+
+.grid .card::after {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-size: 36px;
+  opacity: 0.9;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.5));
+  pointer-events: none;
+}
 </style>
 </head>
 <body>
